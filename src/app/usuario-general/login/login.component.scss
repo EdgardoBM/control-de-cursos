@@ -1,0 +1,31 @@
+.bg {
+  /* The image used */
+  background-image: url("../../../assets/img/fondo.jpg");
+  /* Full height */
+  height: 100vh;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(3px);
+}
+
+/*.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container > * {
+  width: 100%;
+}*/
+
+.contenedor{
+  width: 40%;
+  margin-left: 60vh;
+  margin-top: -80vh;
+  background-color: whitesmoke;
+  position: absolute;
+  border-radius: 15px;
+  border: none;
+  opacity: 8;
+}
