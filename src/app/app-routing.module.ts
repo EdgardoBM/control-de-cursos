@@ -5,6 +5,7 @@ import { NoEncontradoComponent } from './no-encontrado/no-encontrado.component';
 
 const routes: Routes = [
   {path: '', loadChildren: './usuario-general/usuario-general.module#UsuarioGeneralModule'},
+  {path: 'alumno', loadChildren: './alumno/alumno.module#AlumnoModule'},
   {path: '**', component: NoEncontradoComponent}//PAGINA DE LINK NO ENCONTRADO
 
 ];
