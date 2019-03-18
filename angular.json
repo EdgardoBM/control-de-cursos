@@ -10,7 +10,7 @@
       "prefix": "app",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "sass"
+          "style": "scss"
         }
       },
       "architect": {
@@ -28,6 +28,7 @@
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss",
               "node_modules/@fortawesome/fontawesome-free/scss/solid.scss",
               "node_modules/@fortawesome/fontawesome-free/scss/regular.scss",
@@ -37,6 +38,11 @@
               "src/styles.scss"
             ],
             "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/bootstrap/js/dist/util.js",
+
+              "node_modules/popper.js/dist/popper.min.js",
               "node_modules/chart.js/dist/Chart.js",
               "node_modules/hammerjs/hammer.min.js"
             ],

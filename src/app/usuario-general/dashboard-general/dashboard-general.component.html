@@ -64,3 +64,54 @@
           </div>
         </div>
 </div>
+
+
+
+<button type="button" mdbBtn color="primary" class="relative waves-light" (click)="basicModal.show()" mdbWavesEffect>Ver detalles</button>
+<a (click)="basicModal.show()">Ver</a>
+
+<div mdbModal #basicModal="mdbModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fluid" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close pull-right" aria-label="Close" (click)="basicModal.hide()">
+          <span aria-hidden="true">×</span>
+        </button>
+        <h4 class="modal-title w-100" id="myModalLabel">Curso 1</h4>
+      </div>
+      <div class="modal-body">
+        
+        <div class="row"> 
+          <div class="col-2 border">
+              <div class="border border-dark p-2">
+
+                  <br><br><br><br>
+                </div>
+  
+          </div>
+
+          <div class="col-8 border">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ad unde nemo tenetur. Commodi, magni. Atque, cupiditate ex cum ipsam inventore excepturi repudiandae perferendis et ipsum illum consequatur ipsa? Ex?</p>
+            <p class="h4"> <span class="badge badge-primary">Horario: </span> </p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias necessitatibus aliquid id vitae culpa cupiditate illum exercitationem porro officia obcaecati, minus hic! Non magnam voluptatibus at placeat dolores, exercitationem tempore.</p>
+            <p class="h4"> <span class="badge badge-primary">Temario: </span> </p>
+            <ul>
+              <li>lorem</li>
+              <li>lorem</li>
+              <li>lorem</li>
+            </ul>
+
+            <p class="h4"> <span class="badge badge-primary">Costo: </span> </p>
+            <p>$XXXXX</p>
+          </div>  
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        
+        <button type="button" mdbBtn color="primary" class="relative waves-light" mdbWavesEffect>Mas informacion</button>
+        <button type="button" mdbBtn color="secondary" class="waves-light" aria-label="Close" (click)="basicModal.hide()" mdbWavesEffect>Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,3 +1,129 @@
-<p>
-  preinscripciones works!
-</p>
+<div class="contenedor-cursos">
+  <h2>Mis Preinscripciones</h2>
+
+  <div class="card">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Curso</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+        content.</p>
+    </div>
+    <div class="card-body">
+      <a class="card-link" >Realizar pago</a>
+      <a class="card-link" (click)="basicModal.show()">Ver detalles</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Curso</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+        content.</p>
+    </div>
+    <div class="card-body">
+      <a class="card-link" >Realizar pago</a>
+      <a class="card-link" (click)="basicModal.show()">Ver detalles</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Curso</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+        content.</p>
+    </div>
+    <div class="card-body">
+      <a class="card-link" >Realizar pago</a>
+      <a class="card-link" (click)="basicModal.show()">Ver detalles</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Curso</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+        content.</p>
+    </div>
+    <div class="card-body">
+      <a class="card-link" >Realizar pago</a>
+      <a class="card-link" (click)="basicModal.show()">Ver detalles</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Curso</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+        content.</p>
+    </div>
+    <div class="card-body">
+      <a class="card-link" >Realizar pago</a>
+      <a class="card-link" (click)="basicModal.show()">Ver detalles</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Curso</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+        content.</p>
+    </div>
+    <div class="card-body">
+      <a class="card-link" >Realizar pago</a>
+      <a class="card-link" (click)="basicModal.show()">Ver detalles</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- MODAL -->
+<div mdbModal #basicModal="mdbModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fluid" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close pull-right" aria-label="Close" (click)="basicModal.hide()">
+          <span aria-hidden="true">×</span>
+        </button>
+        <h4 class="modal-title w-100" id="myModalLabel">Curso 1</h4>
+      </div>
+      <div class="modal-body">
+        
+        <div class="row"> 
+          <div class="col-2 border">
+              <div class="border border-dark p-2">
+
+                  <br><br><br><br>
+                </div>
+  
+          </div>
+
+          <div class="col-8 border">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ad unde nemo tenetur. Commodi, magni. Atque, cupiditate ex cum ipsam inventore excepturi repudiandae perferendis et ipsum illum consequatur ipsa? Ex?</p>
+            <p class="h4"> <span class="badge badge-primary">Horario: </span> </p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias necessitatibus aliquid id vitae culpa cupiditate illum exercitationem porro officia obcaecati, minus hic! Non magnam voluptatibus at placeat dolores, exercitationem tempore.</p>
+            <p class="h4"> <span class="badge badge-primary">Temario: </span> </p>
+            <ul>
+              <li>lorem</li>
+              <li>lorem</li>
+              <li>lorem</li>
+            </ul>
+
+            <p class="h4"> <span class="badge badge-primary">Costo: </span> </p>
+            <p>$XXXXX</p>
+          </div>  
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <label><b>Para inscribirte a un curso necesitas iniciar sesión</b></label>
+        <button type="button" mdbBtn color="primary" class="relative waves-light" mdbWavesEffect routerLink="/login">Iniciar Sesión</button>
+        <button type="button" mdbBtn color="secondary" class="waves-light" aria-label="Close" (click)="basicModal.hide()" mdbWavesEffect>Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>

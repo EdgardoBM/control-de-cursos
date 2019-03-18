@@ -9,12 +9,15 @@ import { NavegacionGeneralComponent } from './navegacion-general/navegacion-gene
 import { LoginComponent } from './login/login.component';
 import { RegistroComponent } from './registro/registro.component';
 import { MaterialModule } from '../shared/material/material.module';
+import { PiePaginaComponent } from './pie-pagina/pie-pagina.component';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 @NgModule({
-  declarations: [DashboardGeneralComponent, CatalogoGeneralComponent, ContactoComponent, NavegacionGeneralComponent, LoginComponent, RegistroComponent],
+  declarations: [DashboardGeneralComponent, CatalogoGeneralComponent, ContactoComponent, NavegacionGeneralComponent, LoginComponent, RegistroComponent, PiePaginaComponent],
   imports: [
     CommonModule,
     MaterialModule,
+    MDBBootstrapModule,
     UsuarioGeneralRoutingModule
   ]
 })

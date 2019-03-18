@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 import { NoEncontradoComponent } from './no-encontrado/no-encontrado.component';
@@ -21,7 +21,9 @@ import { MaterialModule } from './shared/material/material.module';
     BrowserAnimationsModule,
     MaterialModule
   ],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  
 })
 export class AppModule { }
