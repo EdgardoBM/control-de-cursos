@@ -11,11 +11,13 @@ import { RegistroComponent } from './registro/registro.component';
 import { MaterialModule } from '../shared/material/material.module';
 import { PiePaginaComponent } from './pie-pagina/pie-pagina.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [DashboardGeneralComponent, CatalogoGeneralComponent, ContactoComponent, NavegacionGeneralComponent, LoginComponent, RegistroComponent, PiePaginaComponent],
   imports: [
     CommonModule,
+    HttpClientModule,
     MaterialModule,
     MDBBootstrapModule,
     UsuarioGeneralRoutingModule
