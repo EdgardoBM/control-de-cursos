@@ -1,0 +1,58 @@
+<app-nav-bar-marketer></app-nav-bar-marketer>
+<div class="px-3">
+
+  <table class="table table-striped">
+    <thead >
+      <tr class="table-dark">
+        <th scope="col">Nombre del curso</th>
+        <th scope="col">Descripcion</th>
+        <th scope="col">Capacidad</th>
+        <th scope="col">Fecha de apertura</th>
+        <th scope="col">Fecha de cierre</th>
+        <th scope="col">Instructor</th>
+        <th scope="col">Sede</th>
+        
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let event of evento">
+       
+        <td>{{event.nombre}}</td>
+        <td> {{event.descripcion}}</td>
+        <td>{{event.capacidad}}</td>
+        <td>{{event.fec_apertura}}</td>
+        <td>{{event.fec_termino}}</td>
+        <td>{{event.id_instructor}}</td>
+        <td>{{event.id_sede}}</td>
+        
+        <td><a routerLink="/detalleEventos">Ver</a></td>
+      </tr>
+      <!-- 
+      <tr>
+        <td>Curso2</td>
+        <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo, laboriosam ea accusamus doloremque nisi mollitia! Officiis expedita nostrum, cum, voluptatibus nulla esse modi atque cupiditate molestiae ducimus itaque. Corrupti, provident.</td>
+        <td>ABCD</td>
+        <td>Fecha</td>
+        <td>fecha</td>
+        <td>Instructor2</td>
+        <td>Sede2</td>
+        <td>Programa2</td>
+        <td><a routerLink="/detalleEventos">Ver</a></td>
+      </tr>
+      <tr>
+        <td>Curso2</td>
+        <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo, laboriosam ea accusamus doloremque nisi mollitia! Officiis expedita nostrum, cum, voluptatibus nulla esse modi atque cupiditate molestiae ducimus itaque. Corrupti, provident.</td>
+        <td>ABCD</td>
+        <td>Fecha</td>
+        <td>fecha</td>
+        <td>Instructor2</td>
+        <td>Sede2</td>
+        <td>Programa2</td>
+        <td><a routerLink="/detalleEventos">Ver</a></td>
+        
+      </tr>-->
+    </tbody>
+  </table>
+
+</div>

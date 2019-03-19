@@ -14,6 +14,10 @@ export class ContactoComponent implements OnInit {
     this.getProspectos();
   }
 
+  onSubmit(): void{
+    console.log("enviado click");
+  }
+
   getProspectos(){
     this.prospectoService.getProspectos()
     .subscribe(data => {
