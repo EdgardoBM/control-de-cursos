@@ -1,0 +1,83 @@
+<div class="contenedor">
+    <!-- Default form register -->
+  <form class="text-center border border-light p-5">
+
+      <p class="h4 mb-4">Formulario de Registro</p>
+
+      <!-- First name -->
+
+      <mat-form-field style="width: 100%;">
+        <input matInput placeholder="Nombre" value="">
+      </mat-form-field>
+
+      <!-- E-mail -->
+
+      <mat-form-field style="width: 100%;">
+        <input matInput placeholder="Correo" value="" type="email">
+      </mat-form-field>
+
+      <!-- Password -->
+
+      <mat-form-field style="width: 100%;">
+        <input type="password" matInput placeholder="Contraseña" value="">
+      </mat-form-field>
+
+
+      <mat-form-field style="width: 100%;">
+        <input type="password" matInput placeholder="Confirmar contraseña" value="">
+      </mat-form-field>
+
+      <!-- Fecha de Nacimiento -->
+
+      <mat-form-field>
+          <input matInput [matDatepicker]="picker" placeholder="Fecha de Nacimiento">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+      
+      <!-- <mat-form-field style="width: 100%;">
+        <input matInput [matDatepicker]="picker" placeholder="Fecha de Nacimiento">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field> -->
+
+      <br>
+
+      <!-- Sexo -->
+      
+      <mat-radio-group class="sexo">
+        <label style="padding-right: 15px">Sexo: </label>
+        <mat-radio-button value="1" style="padding-right: 15px; margin-top: 15px;">Masculino</mat-radio-button>
+        <mat-radio-button value="0" style="padding-right: 15px; margin-top: 15px;">Femenino</mat-radio-button>
+      </mat-radio-group>
+
+      <br>
+      <!-- Estado -->
+
+        <mat-form-field style="width: 100%;">
+          <label style="color: #707070">Estado: </label>
+          <mat-select [(value)]="selected">
+            <mat-option>-----</mat-option>
+            <mat-option value="CIUDAD DE MEXICO">Ciudad de México</mat-option>
+            <mat-option value="QUERETARO">Querétaro</mat-option>
+            <mat-option value="VERACRUZ">Veracruz</mat-option>
+          </mat-select>
+        </mat-form-field>
+          
+
+      <!-- Ciudad -->
+
+      <mat-form-field style="width: 100%;">
+          <input matInput placeholder="Ciudad" value="">
+        </mat-form-field>
+
+      <!-- Sign up button -->
+      <button class="btn btn-info my-4 btn-block" type="submit">Registrarme</button>
+
+      <!-- Terms of service -->
+      <p>Al 
+          <em>registrarte</em> estarás aceptando nuestros
+          <a target="_blank">terminos de servicio</a>
+
+  </form>
+</div>
