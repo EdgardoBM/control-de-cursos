@@ -1,5 +1,3 @@
-
-
 <nav class="navbar navbar-expand-lg navbar-light px-3" id="mainNav">
   
     <!--<a class="navbar-brand js-scroll-trigger" href="#page-top">Softlutions</a>-->
@@ -10,13 +8,20 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto ">
         <li class="nav-item px-5 font-weight-bolder">
-          <a class="nav-link js-scroll-trigger" href="#">Menú</a>
+          <a class="nav-link js-scroll-trigger" routerLink="./">Menú</a>
         </li>
         <li class="nav-item px-5 font-weight-bolder">
-          <a class="nav-link js-scroll-trigger" href="#contact">Logout</a>
+          <a class="nav-link js-scroll-trigger" routerLink="">Logout</a>
         </li>
       </ul>
     </div>
   
 </nav>
+
+<body>
+  <router-outlet></router-outlet>  
+</body>
+
+
+
 
